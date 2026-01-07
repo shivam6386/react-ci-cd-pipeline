@@ -19,3 +19,12 @@ jobs:
         
                      - name: "check node version"
                        run: node --version
+
+                     - name: "List of dict"
+                       run: ls
+
+                     - name: "Install dependencies"
+                       run: npm install
+
+                     - name: "List of dict"
+                       run: ls
