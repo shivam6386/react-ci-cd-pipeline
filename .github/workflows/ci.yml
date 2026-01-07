@@ -31,3 +31,6 @@ jobs:
 
                      - name: "List of dict"
                        run: ls
+                    
+                     - name: "Run build"
+                       run: npm run build
