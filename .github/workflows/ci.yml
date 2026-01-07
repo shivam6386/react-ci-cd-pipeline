@@ -10,14 +10,12 @@ on:
 jobs:
     react-ci-workflow:
                 runs-on: ubuntu-latest
-
-
-    steps:
-        - name: "set-up nodejs"
-            uses:  actions/setup-node@V4
-            with: 
-                 node-versions:'21'
+                steps:
+                     - name: "set-up nodejs"
+                       uses:  actions/setup-node@v4
+                       with: 
+                           node-version: 21
 
         
-        - name: "check node version"
-          run : node --version
+                     - name: "check node version"
+                       run: node --version
