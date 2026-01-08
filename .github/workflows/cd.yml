@@ -1,0 +1,17 @@
+name: "cd workflow"
+
+on:
+    workflow_run:
+        workflows: ["Sample React CI Pipeline / workflow"]
+        types: 
+            - completed
+        
+    workflow_dispatch:
+  
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "set-up nodejs"
+              uses:  actions/setup-node@v4
